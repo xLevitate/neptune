@@ -35,6 +35,11 @@ impl Window {
         }
     }
 
+    /// Makes the window resizeable or not. (Default: true)
+    pub fn set_resizeable(&mut self, resizeable: bool) {
+        self.window_handle.set_resizable(resizeable);
+    }
+
     /// Load gl functions.
     pub fn init_gl(&mut self) {
         self.window_handle.make_current();
