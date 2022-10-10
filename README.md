@@ -18,6 +18,8 @@ fn main() {
     window.init_gl();
 
     while !window.should_close() {
+        // Your game code goes here.
+    
         window.update();
     }
 }
