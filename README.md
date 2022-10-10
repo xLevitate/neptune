@@ -2,7 +2,7 @@
 *A brand new free, open-source minimal and compact game engine built in rust.*
 
 ## Design Goals
-We plan to make Neptune a small, minimal and compact engine, making it easy to learn, and not having features that aren't often used.
+We plan to make Neptune a small and minimal engine, making it easy to learn and most importantly modify to your needs, and not having features that aren't often used.
 
 ## *Warning*
 **Neptune is still in very early stages, and won't be an actual usable engine for a long time, and may not ever become a complete one.**
