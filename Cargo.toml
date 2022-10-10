@@ -1,0 +1,17 @@
+[package]
+name = "neptune_eng"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cgmath = "0.18.0"
+env_logger = "0.9.1"
+gl = "0.14.0"
+log = "0.4.17"
+thiserror = "1.0.37"
+
+[dependencies.glfw]
+git = "https://github.com/bjz/glfw-rs.git"
+default-features = false
