@@ -25,4 +25,4 @@ fn main() {
 *The example above shows you how to create a window using neptune.*
 
 ## Contributions
-If you want to contribute just open a pull request, if you have any issues make sure to also post them, I will always be accepting pull requests and doing my best to keep this updated and working.
+Contributions are always welcome, if you want to contribute just open a pull request, if you have any issues make sure to also post them, I will always be accepting pull requests and doing my best to keep this updated and working.
