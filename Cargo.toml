@@ -4,12 +4,4 @@ version = "0.1.1"
 edition = "2021"
 
 [dependencies]
-cgmath = "0.18.0"
-env_logger = "0.9.1"
-gl = "0.14.0"
-log = "0.4.17"
-thiserror = "1.0.37"
-
-[dependencies.glfw]
-git = "https://github.com/bjz/glfw-rs.git"
-default-features = false
+blue_engine = "0.4.11"
