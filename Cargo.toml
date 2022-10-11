@@ -4,4 +4,7 @@ version = "0.1.1"
 edition = "2021"
 
 [dependencies]
-blue_engine = "0.4.11"
+gfx = "0.18.2"
+gl = "0.14.0"
+glfw = "0.45.0"
+winit = "0.27.4"
