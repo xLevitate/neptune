@@ -1,11 +1,7 @@
 use glfw::{Action, Context, Key, WindowEvent};
 use std::sync::mpsc::Receiver;
 
-/// # Window
-///
-/// An abstraction layer for creating a glfw window.
-///
-/// ## Example
+/// # Window Creation Example
 /// ```
 /// let mut window = Window::new(800, 600, "Window Title");
 /// window.init_gl();
