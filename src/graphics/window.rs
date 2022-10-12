@@ -25,7 +25,7 @@ impl Window {
 
         let (mut window, events) = glfw
             .create_window(width, height, title, glfw::WindowMode::Windowed)
-            .expect("Failed to create GLFW window!");
+            .expect("Failed to create window!");
 
         window.set_framebuffer_size_polling(true);
         window.set_key_polling(true);
@@ -35,6 +35,16 @@ impl Window {
             window_handle: window,
             events,
         }
+    }
+
+    /// Makes window resizeable or disables it (Default: true).
+    pub fn set_resizable(&mut self, resizable: bool) {
+        self.window_handle.set_resizable(resizable);
+    }
+
+    /// Sets the window size.
+    pub fn set_window_size(&mut self, width: i32, height: i32) {
+        self.window_handle.set_size(width, height);
     }
 
     /// Load gl functions.
@@ -58,10 +68,9 @@ impl Window {
     fn process_events(&mut self) {
         for (_, event) in glfw::flush_messages(&self.events) {
             match event {
-                glfw::WindowEvent::FramebufferSize(width, height) => {
-                    // Make sure the viewport matches the new window dimensions.
-                    unsafe { gl::Viewport(0, 0, width, height) }
-                }
+                glfw::WindowEvent::FramebufferSize(width, height) => unsafe {
+                    gl::Viewport(0, 0, width, height)
+                },
                 glfw::WindowEvent::Key(Key::Escape, _, Action::Press, _) => {
                     self.window_handle.set_should_close(true)
                 }
