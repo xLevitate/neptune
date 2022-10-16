@@ -1,4 +1,4 @@
-# Neptune
+# Neptuneb
 *A brand new free, open-source minimal and compact game engine built in rust.*
 
 ## Design Goals
